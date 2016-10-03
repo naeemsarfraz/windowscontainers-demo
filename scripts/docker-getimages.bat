@@ -1,0 +1,9 @@
+docker pull microsoft/windowsservercore
+docker pull microsoft/nanoserver
+docker pull microsoft/iis
+docker pull microsoft/dotnet:1.0.1-nanoserver-core
+docker pull microsoft/dotnet:1.0.1-windowsservercore-core
+docker pull microsoft/dotnet-framework:4.6.2
+docker pull microsoft/dotnet-framework:3.5
+docker pull microsoft/aspnet:4.6.2
+docker pull microsoft/aspnet:3.5

@@ -1,0 +1,1 @@
+docker build -t local/aspnet:4.5 dockerfile-aspnetiis45\.
