@@ -1,4 +1,6 @@
-﻿namespace DotNet46.Console
+﻿using System;
+
+namespace DotNet46.Console
 {
     class Program
     {
@@ -18,7 +20,11 @@
 
         static void Main()
         {
-            for (int i = 0; i < 15; i++)
+            int n;
+            if (!int.TryParse(Environment.GetEnvironmentVariable("FIBONACCI_N"), out n))
+                n = 15;
+
+            for (int i = 0; i < n; i++)
             {
                 System.Console.WriteLine(Fibonacci(i));
                 System.Threading.Thread.Sleep(500);
