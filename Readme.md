@@ -1,7 +1,5 @@
 # Windows Containers Demo
 
-A collection of demos I've presented during my talk on Windows Containers.
-
 ## Pre-requisites
 * Windows 10 Professional or Enterprise, Anniversary Update
 * Visual Studio 2015
