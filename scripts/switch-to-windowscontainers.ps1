@@ -3,4 +3,3 @@ Expand-Archive -Path "$env:TEMP\docker-1.13.0-dev.zip" -DestinationPath $env:Pro
 $env:path += ";c:\program files\docker"
 [Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\Program Files\Docker", [EnvironmentVariableTarget]::Machine)
 dockerd -D
-Remove-Item "$env:ProgramFiles\docker" -Recurse -Force -Verbose
