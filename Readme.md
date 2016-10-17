@@ -19,7 +19,7 @@ Open the [solution](https://github.com/naeemsarfraz/windowscontainers-demo/blob/
 1. Right-click and Publish the DotNet46.Web project, choose the Local profile
 2. Open a command prompt in the solution directory and build your docker image `docker build -t demo2 .\DotNet46.Web-Published\.`
 3. Run `docker images` to verify you have a new image demo2 (tag=latest)
-4. Run `docker run --rm -p 80:9999 --name demo2 demo2` and navigate to http://<container ip>:9999* to see the app
+4. Run `docker run --rm -p 80:9999 --name demo2 demo2` and navigate to http://(container ip):9999* to see the app
     * *Run `docker inspect -f "{{ .NetworkSettings.Networks.nat.IPAddress }}" demo2` to get the container ip address
 
 ## Demo 3 - A .NET Console app running in a Windows container
