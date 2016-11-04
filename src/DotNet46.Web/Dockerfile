@@ -3,7 +3,7 @@ FROM microsoft/aspnet:4.6.2
 MAINTAINER Naeem Sarfraz "naeem.sarfraz@gmail.com"
 
 LABEL description="A service container that hosts a vanilla \
-ASP.NET MVC 5 website."
+ASP.NET MVC 5 website." \
       repository="https://github.com/naeemsarfraz/windowscontainers-demo"
 
 ADD . /App

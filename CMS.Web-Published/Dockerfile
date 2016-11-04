@@ -3,7 +3,7 @@ FROM microsoft/aspnet:4.6.2
 MAINTAINER Naeem Sarfraz "naeem.sarfraz@gmail.com"
 
 LABEL description="A service container that hosts a vanilla \
-Umbraco website."
+Umbraco website." \
       repository="https://github.com/naeemsarfraz/windowscontainers-demo" \
 	  umbraco-version="7.5.3"
 
