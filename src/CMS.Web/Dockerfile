@@ -9,10 +9,12 @@ Umbraco website." \
 
 ADD . /CMS
 
-EXPOSE 9999
-
 RUN powershell -Command \
 	Remove-Website -Name 'Default Web Site'; \
 	New-Website -Name 'CMS.Web' -Port 9999 -PhysicalPath 'c:\CMS' -ApplicationPool '.NET v4.5';
+
+EXPOSE 9999
+
+ADD https://raw.githubusercontent.com/naeemsarfraz/iis-log-watcher/master/IISLogWatcher.ps1 /watch.ps1
 
 ENTRYPOINT powershell

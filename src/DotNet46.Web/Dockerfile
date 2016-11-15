@@ -8,10 +8,12 @@ ASP.NET MVC 5 website." \
 
 ADD . /App
 
-EXPOSE 9999
-
 RUN powershell -Command \
 	Remove-Website -Name 'Default Web Site'; \
-	New-Website -Name 'Demo 2' -Port 9999 -PhysicalPath 'c:\App' -ApplicationPool '.NET v4.5';
+	New-Website -Name 'Demo2' -Port 9999 -PhysicalPath 'c:\App' -ApplicationPool '.NET v4.5';
+
+EXPOSE 9999
+
+ADD https://raw.githubusercontent.com/naeemsarfraz/iis-log-watcher/master/IISLogWatcher.ps1 /watch.ps1
 
 ENTRYPOINT powershell
